@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-transform: none;
+    /* Maximale Höhe des Gesamtdokuments */
+    /* max-height: 2800px !important; */
+    overflow: hidden;
+}
+
+/* Media Query für 13,3 Zoll und größer */
+@media (min-width: 1441px) {
+    body {
+    /* max-height: 3200px !important; */
+}
+}
+
+/* Textpositions */
+* {
+    font-family: 'myriad-pro', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text {
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 2;
+}
+
+.left {
+    width: 50%;
+    margin-left: 12%;
+    margin-top: 15%;
+    z-index: 3;
+}
+
+.right {
+    width: 50%;
+    margin-left: -15%;
+    z-index:2;
+}
+
+.cv {
+    margin-top: 10%;
+}
+
+.cvtable {
+    margin-bottom: 50px;
+}
+
+.cvtable div {
+    margin-bottom: 20px;
+}
+
+
+/* Fontstyles */
+
+.subtitles {
+letter-spacing: 3px;
+font-weight: 700;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.info-font {
+    line-height: 2;
+    letter-spacing: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.impressum-font {
+    line-height: 2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+
+/* Header Footer */
+.fixed-header { /*catharina doerr art and design header*/
+    position: fixed;
+    top: 5%;
+    left: 3.5%;
+}
+
+.fixed-footer {
+    position: fixed;
+    right: 3.5%;
+    bottom: 5%;
+    letter-spacing: 2px;
+    z-index: 8000;
+}
+
+
+.impressum {
+    position: absolute;
+    left: 12%;
+    /* bottom: -2000px; */
+}
+
+
+/* Contact */
+
+.link:hover {
+    font-style: italic;
+}
+
+.linkedin {
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+.instagram {
+    letter-spacing: 6.4px;
+    cursor: pointer;
+}
+
+.kontakt {
+    letter-spacing: 11.5px;
+    cursor: pointer;
+}
+
+
+/* Pictures */
+
+.fixed-books { /*Genderprojekt bild*/
+    position: relative;
+}
+
+.books {
+    background-image: url('/assets/2_DasGeschlechtDerObjekte.jpg');
+    height: 600px;
+    width: auto;
+    display: flex;
+    margin-left: 23%;
+}
+
+
+
+.research {
+    /* background-image: url(/assets/BA_utopie.jpg); */
+    height: 400px;
+    width: auto;
+    display: flex;
+    line-height: 2;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+.research-text {
+    margin-left: 30%;
+    margin-right: 0%;
+    margin-top: 30%;
+    font-style: italic;
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing:3px;
+    text-transform: uppercase;
+}
+
+
+/* Tooltip */
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+.tooltip span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+
+#tooltip-span {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: none;
+}
+
+
+/* New Image Positioning */
+
+.utopie {
+    margin-top: 150px;
+}
+
+.Bachelorarbeit-img {
+    max-width: 750px;
+    height: auto;
+    margin-left: -5%;
+}
+
+.visuellekultur {
+    margin-right: 0%;
+    margin-top: 150px;
+}
+
+.visuellekultur-img {
+    max-width: 750px;
+    height: auto;
+    margin-left: 7%;
+}
+
+.vynil {
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+.vynil-img {
+    max-width: 650px;
+    height: auto;
+}
+
+.Bassware {
+    margin-right: 30%;
+    margin-top: 100px;
+}
+
+.Bassware-img {
+    max-width: 300px;
+    height: auto;
+}
+
+
+/* Mobile View */
+
+body {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100% !important;
+        padding-left: 1em;
+        margin-top: 7em;
+    }
+
+    .left {
+        width: 100%;
+        margin: 0;
+    }
+    .right {
+        width: 40%;
+        overflow: hidden;
+        display: flex;
+        gap: 50px;
+    }
+    .research-text {
+        margin-bottom: 1em;
+    }
+
+
+}
+
+/* @media (min-width: 1440px) {
+    .vynil {
+        margin-top: 40%;
+    }
+} */
+
+html {
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+
+/* Swap Image on Hover */
+
+    /*
+      Rollover Image
+     */
+     .figure {
+        position: relative;
+
+    }
+    .figure img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .4s;
+    }
+    .figure:hover img.image-hover {
+      opacity: 2;
+    }
+
+    /* Books Image Size Fix */
+
+    img.Sirv:not([width]):not([height])  {
+        width: auto;
+    }
+
+    /* Only MObile Elements */
+
+@media (min-width: 769px) {
+    .no-desktop {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none !important;
+    }
+}
+
+/* Only Desktop Elements */
+
+@media (max-width: 768px) {
+    .no-mobile {
+        display: none;
+    }
+}
+
+/* Mobile Fixes */
+
+@media (max-width: 768px) {
+    body {
+        max-height: 11000px !important;
+    }
+
+    .books {
+        z-index: 2;
+        margin-left: 0;
+        height: auto;
+        padding: 1em;
+
+
+    }
+    .fixed-header {
+        z-index: 5;
+    }
+    body {
+        padding: 2em;
+    }
+    html {
+        max-width: 85% !important;
+        overflow-x: hidden !important;
+    }
+    .fixed-header {
+        left: auto;
+    }
+    .fixed-footer {
+        bottom: 3.5%;
+    }
+    .intro {
+        margin-top: 2em;
+    }
+     .bachelor-mobil {
+        margin-top: 2em;
+    }
+
+    .vk-container {
+        margin-top: 2em;
+    }
+
+    .vynil-mobile {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .subtitles {
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    }
+
+    .cvtable {
+        margin-bottom: 15px;
+    }
+
+    .bassware-container-mobile {
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+    .impressum {
+        bottom: -5850px;
+    }
+
+    .cvtable div {
+        margin-bottom: 0px;
+    }
+
+}
+
+/* Media Queries for 13,3" und mehr */
+
+ @media (min-width: 1500px) {
+    .vynil-img, .visuellekultur-img, .Bachelorarbeit-img {
+        max-width: 750px !important;
+        height: auto;
+    }
+
+    .utopie {
+        margin-top: 200px;
+        margin-right: 11%;
+    }
+
+    .visuellekultur {
+        margin-top: 280px;
+        margin-right: 7%;
+    }
+
+    .vynil {
+        margin-top: 150px;
+        margin-left: 10%;
+    }
+
+    .Bassware {
+        margin-top: 300px;
+    }
+    .impressum {
+        position: absolute;
+        left: 200px;
+        bottom: -2140px;
+    }
+    .left {
+        padding-right: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 1270px) and (min-width: 1399px)  {
+    .impressum {
+        /* bottom: WERT EINTRGAEN; */
+    }
+}
