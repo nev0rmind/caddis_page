@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
 
 /* Media Query für 13,3 Zoll und größer */
 @media (min-width: 1441px) {
-    body {
+    .body {
     /* max-height: 3200px !important; */
 }
 }
@@ -36,6 +36,11 @@ a {
     margin-left: 12%;
     margin-top: 15%;
     z-index: 3;
+}
+@media (min-width: 769px) {
+footer {
+    margin-left: 12%;
+}
 }
 
 .right {
@@ -118,12 +123,12 @@ margin-top: 30px;
     z-index: 8000;
 }
 
-
+/* 
 .impressum {
     position: absolute;
     left: 12%;
-    /* bottom: -2000px; */
-}
+
+} */
 
 
 /* Contact */
@@ -260,8 +265,8 @@ body {
 
 @media (max-width: 768px) {
     body {
-        width: 100% !important;
-        padding-left: 1em;
+        /* width: 100% !important; */
+        /* padding-left: 1em; */
         margin-top: 7em;
     }
 
@@ -289,7 +294,7 @@ body {
 } */
 
 html {
-    max-width: 100% !important;
+    /* max-width: 100% !important; */
     overflow-x: hidden;
 }
 
@@ -347,9 +352,9 @@ html {
 /* Mobile Fixes */
 
 @media (max-width: 768px) {
-    body {
+    /* body {
         max-height: 11000px !important;
-    }
+    } */
 
     .books {
         z-index: 2;
@@ -362,12 +367,13 @@ html {
     .fixed-header {
         z-index: 5;
     }
-    body {
+    /* body {
         padding: 2em;
-    }
+    } */
     html {
         max-width: 85% !important;
         overflow-x: hidden !important;
+        margin: 0 auto;
     }
     .fixed-header {
         left: auto;
